@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naveen M | Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+:root{
+--bg:#0B1120;
+--primary:#3B82F6;
+--accent:#8B5CF6;
+--text:#F8FAFC;
+}
+html{scroll-behavior:smooth}
+body{
+background:var(--bg);
+color:var(--text);
+font-family:Inter,Arial,sans-serif;
+}
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:20px;
+}
+.navbar{
+background:rgba(11,17,32,.8)!important;
+backdrop-filter:blur(10px);
+}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+radial-gradient(circle at top right, rgba(139,92,246,.3), transparent 35%),
+radial-gradient(circle at bottom left, rgba(59,130,246,.25), transparent 35%);
+}
+.gradient-text{
+background:linear-gradient(90deg,var(--primary),var(--accent));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.profile{
+width:280px;height:280px;border-radius:50%;
+border:4px solid var(--primary);
+box-shadow:0 0 30px var(--primary),0 0 60px var(--accent);
+}
+.section-title{
+font-weight:700;
+margin-bottom:2rem;
+}
+.skill-card,.project-card,.cert-card{
+transition:.3s;
+}
+.skill-card:hover,.project-card:hover,.cert-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(59,130,246,.35);
+}
+.timeline{
+border-left:3px solid var(--primary);
+padding-left:25px;
+}
+.timeline-item{
+position:relative;
+margin-bottom:25px;
+}
+.timeline-item::before{
+content:'';
+position:absolute;
+left:-34px;top:5px;
+width:14px;height:14px;border-radius:50%;
+background:var(--accent);
+}
+.progress{
+height:10px;
+background:#1e293b;
+}
+.btn-glow:hover{
+box-shadow:0 0 20px var(--primary);
+}
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+display:none;
+z-index:1000;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold gradient-text" href="#">Naveen</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-7" data-aos="fade-right">
+<h5>Hello, I'm</h5>
+<h1 class="display-3 fw-bold gradient-text">Naveen M</h1>
+<h3>Computer Science Engineering Student</h3>
+<p class="lead">Aspiring Software Developer, Problem Solver and Future Tech Entrepreneur.</p>
+<a class="btn btn-primary btn-lg me-2 btn-glow" href="#projects">View Projects</a>
+<a class="btn btn-outline-light btn-lg" href="#contact">Contact Me</a>
+</div>
+<div class="col-lg-5 text-center" data-aos="fade-left">
+<img src="https://via.placeholder.com/280" class="profile img-fluid" alt="Profile">
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="container py-5">
+<h2 class="section-title text-center" data-aos="fade-up">About Me</h2>
+<div class="glass p-4" data-aos="zoom-in">
+<p>I am Naveen M, a Computer Science Engineering student currently in 4th semester. Passionate about software development, web technologies, data structures and problem solving.</p>
+<p><strong>Education:</strong> B.E. Computer Science Engineering</p>
+<p><strong>Academic Performance:</strong> Sem 1 CGPA 7.37 | Sem 2 GPA 8.09 | Sem 3 GPA 8.17</p>
+<p><strong>Career Objective:</strong> To build innovative software solutions and grow into a successful tech entrepreneur.</p>
+</div>
+</section>
+
+<section id="skills" class="container py-5">
+<h2 class="section-title text-center">Skills</h2>
+<div class="row g-4">
+<div class="col-md-3">
+<div class="glass p-3 skill-card">
+<h5>Frontend</h5>
+<p>HTML, CSS, Bootstrap</p>
+<div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="glass p-3 skill-card">
+<h5>Backend</h5>
+<p>Python, Java, C++</p>
+<div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="glass p-3 skill-card">
+<h5>Database</h5>
+<p>SQL</p>
+<div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="glass p-3 skill-card">
+<h5>Tools</h5>
+<p>Git, VS Code</p>
+<div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="container py-5">
+<h2 class="section-title text-center">Projects</h2>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="glass p-3 project-card">
+<img src="https://via.placeholder.com/600x300" class="img-fluid rounded mb-3">
+<h4>University Bus Attendance System</h4>
+<p>Attendance management system using HashMap for efficient student tracking.</p>
+<a class="btn btn-primary">Live Demo</a>
+<a class="btn btn-outline-light">GitHub</a>
+</div>
+</div>
+<div class="col-md-6">
+<div class="glass p-3 project-card">
+<img src="https://via.placeholder.com/600x300" class="img-fluid rounded mb-3">
+<h4>Bootstrap Portfolio</h4>
+<p>Responsive futuristic portfolio website built using Bootstrap 5.3.</p>
+<a class="btn btn-primary">Live Demo</a>
+<a class="btn btn-outline-light">GitHub</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience" class="container py-5">
+<h2 class="section-title text-center">Experience / Internship</h2>
+<div class="glass p-4 timeline">
+<div class="timeline-item">
+<h5>Internship Trainee</h5>
+<p>Learning Bootstrap, Web Development and Modern UI Design.</p>
+</div>
+</div>
+</section>
+
+<section class="container py-5">
+<h2 class="section-title text-center">Certifications</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="glass p-3 cert-card">
+<h5>Python Programming</h5>
+<p>Certification Course</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="glass p-3 cert-card">
+<h5>Web Development</h5>
+<p>Frontend Technologies</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="glass p-3 cert-card">
+<h5>Data Structures</h5>
+<p>Problem Solving</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="container py-5">
+<h2 class="section-title text-center">Contact</h2>
+<div class="glass p-4">
+<form>
+<div class="row">
+<div class="col-md-6 mb-3"><input class="form-control" placeholder="Name"></div>
+<div class="col-md-6 mb-3"><input class="form-control" placeholder="Email"></div>
+</div>
+<input class="form-control mb-3" placeholder="Subject">
+<textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+<button class="btn btn-primary">Send Message</button>
+</form>
+<div class="mt-4 text-center fs-3">
+<i class="bi bi-linkedin me-3"></i>
+<i class="bi bi-github me-3"></i>
+<i class="bi bi-envelope-fill"></i>
+</div>
+</div>
+</section>
+
+<footer class="text-center py-4">
+<p>© 2026 Naveen M. All Rights Reserved.</p>
+</footer>
+
+<button id="topBtn" class="btn btn-primary"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:1000,once:true});
+const btn=document.getElementById('topBtn');
+window.onscroll=()=>{
+btn.style.display=window.scrollY>300?'block':'none';
+};
+btn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+</body>
+</html>
